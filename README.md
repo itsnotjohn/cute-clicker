@@ -1,2 +1,2 @@
 # cute-clicker
-https://streamable.com/crydeo
+![Demo](https://streamable.com/crydeo)
