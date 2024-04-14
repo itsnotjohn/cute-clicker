@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{c336cfe3-f0c4-464c-9ef0-a9e17a7ff222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\utils">
+      <UniqueIdentifier>{2c64338c-9a19-426d-a962-9b020cb3b144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ui">
+      <UniqueIdentifier>{90f65863-2868-4d83-824d-9d2d25afc62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\utils\lib">
+      <UniqueIdentifier>{7a0b4470-42f6-4ddf-b89b-68c37cc379ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ui\tabs">
+      <UniqueIdentifier>{0e65d02e-c818-4496-817d-339db40b6701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\font">
+      <UniqueIdentifier>{a7eadce6-6635-45ba-b6ac-65ab3513a2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\features">
+      <UniqueIdentifier>{3a4e4d0d-2d56-43c7-9324-00710020d5a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\features\keybind">
+      <UniqueIdentifier>{5789b66b-4bef-4ceb-b1d7-f7c27c3b1b32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_opengl2.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="ImGui\font\fonts.cpp">
+      <Filter>imgui\font</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_opengl2.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ui\ui.hpp">
+      <Filter>Source\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\lib\lazy.hpp">
+      <Filter>Source\utils\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\lib\xorstr.hpp">
+      <Filter>Source\utils\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include.h" />
+    <ClInclude Include="Source\utils\utils.hpp">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\font\fonts.hpp">
+      <Filter>imgui\font</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\variables.hpp">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\cpuid.h">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ui\tabs\combat_tabs.hpp">
+      <Filter>Source\ui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ui\tabs\memory_tabs.hpp">
+      <Filter>Source\ui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ui\tabs\random_tabs.hpp">
+      <Filter>Source\ui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ui\tabs\misc_tabs.hpp">
+      <Filter>Source\ui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\keybind\keys.h">
+      <Filter>Source\features\keybind</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\reach.hpp">
+      <Filter>Source\features</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\clicker.hpp">
+      <Filter>Source\features</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\velocity.hpp">
+      <Filter>Source\features</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\timer.hpp">
+      <Filter>Source\features</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\lib\base64.hpp">
+      <Filter>Source\utils\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\utils\lib\md5.h">
+      <Filter>Source\utils\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\features\throwpot.h">
+      <Filter>Source\features</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
