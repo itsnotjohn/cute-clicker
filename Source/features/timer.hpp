@@ -3,16 +3,16 @@ void timer_function( std::vector<double> value, bool status, DWORD min, DWORD ma
 	var::timer::speed_pid = utils::cute::get_processid( "javaw.exe" ); int cucklord_reach_chance_temp = utils::cute::cute_random_int( 0, 99 );
 	if ( var::timer::speed_phandle = OpenProcess( THREAD_QUERY_INFORMATION | PROCESS_VM_OPERATION | PROCESS_VM_READ | PROCESS_VM_WRITE, false, var::timer::speed_pid ) )
 	{
-		INT64 cucklord_current_address = min; 
+		INT64 cute_current_address = min; 
 		bool breakscan = var::timer::timer_tab; MEMORY_BASIC_INFORMATION cucklord_memory;
-		while ( cucklord_current_address < max )
+		while ( cute_current_address < max )
 		{
 			if ( breakscan != var::timer::timer_tab )
 			{
 				break;
 			}
 			std::vector<double> buffer( MEMBLOCK );
-			if ( ReadProcessMemory( var::timer::speed_phandle, ( LPVOID ) cucklord_current_address, &buffer[ 0 ], MEMBLOCK, 0 ) )
+			if ( ReadProcessMemory( var::timer::speed_phandle, ( LPVOID ) cute_current_address, &buffer[ 0 ], MEMBLOCK, 0 ) )
 			{
 				for ( size_t i = 0; i < buffer.size( ); ++i )
 				{
@@ -24,26 +24,26 @@ void timer_function( std::vector<double> value, bool status, DWORD min, DWORD ma
 							{
 								if ( var::timer::speed_tpmode )
 								{
-									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cucklord_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_new, sizeof( double ), 0 );
+									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cute_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_new, sizeof( double ), 0 );
 									std::this_thread::sleep_for( std::chrono::milliseconds( 20 ) );
-									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cucklord_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_default, sizeof( double ), 0 );
+									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cute_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_default, sizeof( double ), 0 );
 								}
 								else
 								{
-									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cucklord_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_new, sizeof( double ), 0 );
+									WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cute_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_new, sizeof( double ), 0 );
 								}
 							}
 							if ( !status )
 							{
 								var::timer::speed_used = false;
-								WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cucklord_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_default, sizeof( double ), 0 );
+								WriteProcessMemory( var::timer::speed_phandle, ( LPVOID ) ( cute_current_address + ( ( i + 1 ) * sizeof( double ) ) - sizeof( double ) ), &var::timer::speed_default, sizeof( double ), 0 );
 							}
 							std::this_thread::sleep_for( std::chrono::milliseconds( 1 ) );
 						}
 					}
 				}
 			}
-			cucklord_current_address += MEMBLOCK;
+			cute_current_address += MEMBLOCK;
 		}
 		CloseHandle( var::timer::speed_phandle );
 		if ( var::timer::speed_tpmode )
