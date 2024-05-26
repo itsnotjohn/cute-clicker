@@ -1,6 +1,6 @@
 void timer_function( std::vector<double> value, bool status, DWORD min, DWORD max )
 {
-	var::timer::speed_pid = utils::cute::get_processid( "javaw.exe" ); int cucklord_reach_chance_temp = utils::cute::cute_random_int( 0, 99 );
+	var::timer::speed_pid = utils::cute::get_processid( "javaw.exe" ); int cute_reach_chance_temp = utils::cute::cute_random_int( 0, 99 );
 	if ( var::timer::speed_phandle = OpenProcess( THREAD_QUERY_INFORMATION | PROCESS_VM_OPERATION | PROCESS_VM_READ | PROCESS_VM_WRITE, false, var::timer::speed_pid ) )
 	{
 		INT64 cute_current_address = min; 
